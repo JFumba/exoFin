@@ -1,0 +1,312 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+.container-fluid {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar-nav {
+    flex: 1;
+    height: 30px;
+    margin: auto !important;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.nav-link:hover {
+    color: #ff004d;
+}
+
+h2 {
+    color: #ff004d;
+}
+
+li a {
+    line-height: 10px;
+    color: white;
+}
+
+li a:hover {
+    color: white;
+}
+
+.main {
+    position: fixed;
+    top: 46px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: scroll;
+}
+
+.accueil {
+    text-align: center;
+    background: url("images/fond.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    height: 90vh;
+}
+
+.normal {
+    display: flex;
+    flex-direction: column;
+    color: #ff004d;
+    background-color: rgba(255,255,255,0.5);
+    width: 70%;
+    height: 55%;
+    padding: 5%;
+    align-content: space-around;
+    border-radius: 5px;
+}
+
+
+
+form .row {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    margin-left: 0 !important;
+    margin-right: 0!important;
+}
+
+.form-control {
+    border-radius: 0;
+    border-color: white;
+}
+
+.form-group {
+    padding: 0;
+    margin: 0;
+}
+
+.btn-custom {
+    line-height: 38px;
+    margin: 0;
+    padding: 0;
+    background-color: #ff004d;
+    color: white;
+    text-decoration: none;
+}
+
+.searchIcon {
+    display: none;
+}
+
+.btn-custom:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.cards, .cardsAgents {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.card {
+    width: 30%;
+    border: none;
+}
+
+.bien, .agent {
+    text-align: center;
+}
+
+.mobile {
+    display: none;
+}
+
+dl {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.cardsAgents {
+    width: 80vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.cardsAgents .card {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: none;
+}
+
+.cardsAgents .card img {
+    width: 52%;
+    height: 60%;
+}
+
+.cardsAgents .card-body {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    padding-left: 3%;
+    width: 100%;
+    height: 70%;
+    text-align: left;
+}
+
+.pAgent p {
+    margin: 0.3rem;
+}
+
+
+.cardsAgents .card-body div {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.cardsAgents .card-body .icon {
+    display: flex;
+    flex-direction: row;
+    height: 20%;
+    width: 40%;
+}
+
+.footer {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    height: 35%;
+    color: #ff004d;
+    background-color: black;
+}
+
+#footer {
+    display: none ;
+}
+.elFooter {
+    padding: 5%;
+}
+
+@media (max-width : 640px) {
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        height: 50px;
+        background-color: black;
+    }
+
+    .navigation a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .navigation a:hover {
+        color: #ff004d;
+    }
+
+    .navbar {
+        width: 100%;
+        height: 20px;
+        position: fixed;
+        top: 0;
+    }
+    .main {
+        position: absolute;
+    }
+
+    .accueil {
+        height: 30vh;
+    }
+
+    .normal p {
+        display: none;
+    }
+
+    .normal h1 {
+        font-size: 90%;
+    }
+
+    .searchIcon {
+        display: inline;
+    }
+
+    .searchText {
+        display: none;
+    }
+
+    .mobile {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        background-color: white;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    dl {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .cards, .cardsAgents {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .cards .card , .cardsAgents .card{
+        width: 100%;
+    }
+
+    #footer {
+        height: auto;
+        display: block;
+        background-color: black;
+        margin-bottom: 0;
+    }
+
+    .main {
+        
+    background: url("images/fond.jpg");
+    background-size: cover;
+    }
+    
+    .accueil{
+        background: none;
+    }
+
+    .newNav button, .newNav .navLink {
+        color: white;
+        background-color: black;
+        text-align: left;
+    }
+
+    .navLink .newNav .collapse .show {
+        margin-top: 0 !important;
+    }
+
+    .navLink p a {
+        text-decoration: none;
+        color: white;
+    }
+
+    
+}
